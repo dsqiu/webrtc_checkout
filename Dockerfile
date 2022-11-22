@@ -14,9 +14,8 @@ RUN \
   apt-get -y upgrade && \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
-  apt-get install -y byobu curl git htop man unzip vim wget python && \
+  apt-get install -y repo curl git htop man unzip vim wget python3.6 && \
   rm -rf /var/lib/apt/lists/*
-
 # Add files.
 ADD root/.bashrc /root/.bashrc
 ADD root/.gitconfig /root/.gitconfig
